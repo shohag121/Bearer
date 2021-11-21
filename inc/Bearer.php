@@ -11,7 +11,7 @@ final class Bearer {
 	/**
 	 * Plugin instance.
 	 *
-	 * @since BEARER_SINCE
+	 * @since 1.0.0
 	 *
 	 * @var Bearer
 	 */
@@ -20,7 +20,7 @@ final class Bearer {
 	/**
 	 * Plugin constructor method.
 	 *
-	 * @since BEARER_SINCE
+	 * @since 1.0.0
 	 */
 	private function __construct() {
 	}
@@ -28,7 +28,7 @@ final class Bearer {
 	/**
 	 * Plugin init function.
 	 *
-	 * @since BEARER_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return Bearer
 	 */

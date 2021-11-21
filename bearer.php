@@ -60,7 +60,7 @@ if ( ! function_exists( 'bearer' ) ) {
 	/**
 	 * Helper class for Bearer.
 	 *
-	 * @since BEARER_SINCE
+	 * @since 1.0.0
 	 *
 	 * @return \WPDevICU\Bearer\Bearer
 	 */
