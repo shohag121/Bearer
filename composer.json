@@ -1,0 +1,19 @@
+{
+    "name": "wpdevicu/bearer",
+    "description": "Wordpress plugin",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "WPDevICU\\Bearer\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Shazahanul Islam Shohag",
+            "email": "shohag121@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
