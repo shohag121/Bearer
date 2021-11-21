@@ -2,6 +2,8 @@
 
 namespace WPDevICU\Bearer;
 
+use WPDevICU\Bearer\Admin\Dashboard;
+
 /**
  * Bearer.
  *
@@ -23,6 +25,9 @@ final class Bearer {
 	 * @since 1.0.0
 	 */
 	private function __construct() {
+		if ( is_admin() ) {
+			new Dashboard();
+		}
 	}
 
 	/**
