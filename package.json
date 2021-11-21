@@ -1,0 +1,23 @@
+{
+  "name": "bearer",
+  "version": "1.0.0",
+  "description": "Wordpress plugin",
+  "main": "index.js",
+  "scripts": {
+    "version": "node util/version-replace"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shohag121/Bearer.git"
+  },
+  "author": "Shazahanul Islam Shohag",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/shohag121/Bearer/issues"
+  },
+  "homepage": "https://github.com/shohag121/Bearer#readme",
+  "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "replace-in-file": "^6.3.2"
+  }
+}
