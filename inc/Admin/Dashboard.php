@@ -16,6 +16,7 @@ class Dashboard {
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'add_admin_menus' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'load_related_assets' ) );
 	}
 
 	/**
@@ -65,7 +66,7 @@ class Dashboard {
 	 * @return void
 	 */
 	public function load_dashboard_content() {
-		echo 'Bearer Dashboard';
+		echo '<div id="bearer-dashboard-wrapper"></div>';
 	}
 
 	/**
@@ -76,6 +77,21 @@ class Dashboard {
 	 * @return void
 	 */
 	public function load_settings_content() {
-		echo 'Settings Content';
+		echo '<div id="bearer-settings-wrapper"></div>';
+	}
+
+	/**
+	 * Load Page specific assets.
+	 *
+	 * @since BEARER_SINCE
+	 *
+	 * @return void
+	 */
+	public function load_related_assets() {
+		$current_screen = get_current_screen();
+
+		if ( 'toplevel_page_bearer_dashboard' === $current_screen->id ) {
+			wp_enqueue_script( 'bearer-dashboard-js' );
+		}
 	}
 }

@@ -25,6 +25,8 @@ final class Bearer {
 	 * @since 1.0.0
 	 */
 	private function __construct() {
+		new Assets();
+
 		if ( is_admin() ) {
 			new Dashboard();
 		}

@@ -49,6 +49,10 @@ if ( ! defined( 'BEARER_PLUGIN_DIR' ) ) {
 	define( 'BEARER_PLUGIN_DIR', __DIR__ );
 }
 
+if ( ! defined( 'BEARER_PLUGIN_BUILD_DIR' ) ) {
+	define( 'BEARER_PLUGIN_BUILD_DIR', BEARER_PLUGIN_DIR . '/build' );
+}
+
 if ( ! file_exists( BEARER_PLUGIN_DIR . '/vendor/autoload.php' ) ) {
 	return;
 }
