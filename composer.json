@@ -15,5 +15,7 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "zohocrm/php-sdk-2.1": "dev-master"
+    }
 }
